@@ -13,8 +13,11 @@ Algorithm:
 
 1. loop through the array in reverse order say i
 2. Internally make another loop j from 0 to i
-3. if adjacent numnbers are smaller than swap them to put the largest element to the mot right
+3. if adjacent numnbers are smaller than swap them to put the largest element to the most right
 4. repeat from 2 and 3 for each j
 5. repeat 1 for each i 
+
+Time Complexity: O(N^2) for the worst and average cases and O(N) for the best case.
+Space Complexity: O(1)
 """
 

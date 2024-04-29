@@ -18,4 +18,7 @@ Algorithm
 1. Starting from the first index to n-1 index, find the smallest element
 2. swap the first element with the smallest element and increment the loop
 3. do this till the end of the loop
+
+Time Complexity: O(N^2)
+Space Complexity: O(1)
 """
