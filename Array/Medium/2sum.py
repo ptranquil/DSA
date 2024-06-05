@@ -26,17 +26,20 @@ arr = [2,6,5,8,11]
 k=14
 print(twoSum(arr,k))
 
-#two pointer
+#two pointer: but for this approach, the array needs to be sorted
 def twoSum(arr, k):
-    left = 0
-    right = len(arr)-1
-    while(left<right):
-        if arr[left]+arr[right] == k:
-            return [left, right]
-        left+=1
-        right-=1
+    i = 0
+    j = len(arr)-1
+    while(i<j):
+        sum = arr[i] + arr[j]
+        if k > sum:
+            i=i+1
+        elif k < sum:
+            j=j-1
+        else:
+            return [i,j]
     return [-1,-1]
 
 arr = [2,6,5,8,11]
-k=14
+k=17
 print(twoSum(arr,k))
