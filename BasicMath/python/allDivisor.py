@@ -11,7 +11,7 @@ def allDivisorOptimal(n):
             print(i)
             if(i != n/i):
                 print (n//i)
-a
+
 allDivisor(6)
 print("Using optimal solution")
 allDivisorOptimal(6)
