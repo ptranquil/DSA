@@ -1,17 +1,23 @@
-def longestSubArray(arr):
-    temp = [0]*len(arr)
-    temp[0] = arr[0]
-    for i in range(1,len(arr)):
-        temp[i] = temp[i-1]+arr[i]
-    max = float('-inf')
-    j=1
-    for val in temp:
-        if val == k:
-            max = j
-        j+=1    
-    return max
+#!!Important
+def longestSubArray(arr,k):
+    sum=0
+    hashMap ={}
+    maxLength=0
+    for i in range(len(arr)):
+        sum+=arr[i]
+        if sum == k:
+            maxLength = max(i+1, maxLength)
+        
+        rem = sum - k
+        if rem in hashMap:
+            newLen = i+1 - hashMap[rem]
+            maxLength = max(maxLength,newLen)
+        
+        if sum not in hashMap:
+            hashMap[sum] = i
+    print(hashMap)
+    return maxLength
 
-
-arr = [2,3,5,1,9]
-k = 10
-print("The longest sub array with sum",k,"is",longestSubArray(arr))
+arr = [1,1,1,1,1,4,5,3,3,2,4,56,7,76,65,5,6,7,7,7,8,8,8,8,8,8,8,8,8,8,8]
+k = 64
+print("The longest sub array with sum",k,"is",longestSubArray(arr,k))
