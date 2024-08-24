@@ -31,9 +31,7 @@ def maxProfit(arr):
     minPrice = float('inf')
     for i in range(len(arr)):
         minPrice = min(minPrice, arr[i])
-        print("minPrice is:", minPrice)
         maxPro = max(maxPro, arr[i] - minPrice)
-        print("maxPro is:", maxPro)
     return maxPro
 
 arr = [7, 1, 5, 3, 6, 4]
