@@ -8,10 +8,10 @@ def selectionSort(arr):
         #swap only if min is different
         if min != i:
             arr[i], arr[min] = arr[min],arr[i]
-    print(arr)
 
 arr = [6,5,8,9,3,4,1]
 selectionSort(arr)
+print(arr)
 
 """
 Algorithm
