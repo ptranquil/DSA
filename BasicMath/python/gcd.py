@@ -1,3 +1,5 @@
+# The GCD of two numbers is the largest number that divides both of them without leaving a remainder. 
+
 def findgcd(a,b):
     result = 1
     for i in range(1,min(a,b)+1):

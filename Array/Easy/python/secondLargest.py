@@ -7,9 +7,11 @@ def findLargestElement(arr):
         if max < arr[i]:
             secLargest = max
             max = arr[i]
+        elif (arr[i] > secLargest and arr[i] != max):
+            secLargest = arr[i]
     return secLargest
 
-arr = [1,2,3,4,5,6,7,8,8,9]
+arr = [234,56,72,31,31,324,3456,2,3121,1,4]
 print('The second largest element in the array is:',findLargestElement(arr))
 
 """

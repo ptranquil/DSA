@@ -1,3 +1,6 @@
+'''
+An Armstrong number (also known as a Narcissistic number or Pluperfect digital invariant) is a number that is equal to the sum of its own digits each raised to the power of the number of digits.
+'''
 def checkArmstrong(n):
     digit=0
     num=n

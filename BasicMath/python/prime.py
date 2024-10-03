@@ -14,3 +14,8 @@ if __name__=="__main__":
         print(N,"is prime")
     else:
         print(N,"is not prime")
+
+'''
+TC: O(Sqrt(N))
+SC: O(1)
+'''
