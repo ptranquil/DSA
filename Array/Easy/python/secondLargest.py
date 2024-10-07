@@ -5,7 +5,7 @@ def findLargestElement(arr):
     max=float('-inf') 
     for i in range(0,len(arr)):
         if max < arr[i]:
-            secLargest = max
+            # secLargest = max
             max = arr[i]
         elif (arr[i] > secLargest and arr[i] != max):
             secLargest = arr[i]
