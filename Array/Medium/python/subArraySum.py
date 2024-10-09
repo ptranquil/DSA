@@ -18,6 +18,7 @@ def maxSubArraySum():
 
 """
 Kadane Algorithm
+optimized : Returning sum as well as the actuall subarray
 Time Complexity: O(N)
 Space Complexity: O(1)
 """
