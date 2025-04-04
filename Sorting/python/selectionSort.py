@@ -14,7 +14,7 @@ selectionSort(arr)
 print(arr)
 
 """
-Algorithm
+Algorithm : Select the min element and put at the start (Adjacent Swapping)
 1. Starting from the first index to n-1 index, find the smallest element
 2. swap the first element with the smallest element and increment the loop
 3. do this till the end of the loop

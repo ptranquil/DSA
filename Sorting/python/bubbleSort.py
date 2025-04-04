@@ -9,7 +9,7 @@ arr = [6,5,8,9,3,4,1]
 bubbleSort(arr)
 
 """
-Algorithm:
+Algorithm: Select the max put at the end (reverse of selection)
 
 1. loop through the array in reverse order say i
 2. Internally make another loop j from 0 to i

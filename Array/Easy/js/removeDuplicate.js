@@ -17,6 +17,26 @@ function removeDup(arr){
 }
 // Object.keys returns array of keys
 
+/** Using set as hasmap is not a proper approach to this solution */
+function removeduplicates(arr){
+    const unique = new Set()
+    for(let i=0;i<arr.length;i++){
+        unique.add(arr[i])
+    }
+
+    // unique.forEach((key,val) => {
+    //     console.log(key, val)
+    //     arr[key-1] = val
+    // })
+
+    const itr = unique.values();
+    for(let i=0;i<unique.size;i++){
+        arr[i] = itr.next().value
+    }
+    console.log(arr)
+}
+
+
 arr=[1,2,3,3,4,4,5,5,6]
 removeDup(arr)
 
